@@ -1,19 +1,19 @@
 # CircuitPython
 This repository will actually serve as a aid to help you get started with your own template.  You should copy the raw form of this readme into your own, and use this template to write your own.  If you want to draw inspiration from other classmates, feel free to check [this directory of all students!](https://github.com/chssigma/Class_Accounts).
 ## Table of Contents
-* [Table of Contents](#TableOfContents)
 * [Hello_CircuitPython](#Hello_CircuitPython)
-* [CircuitPython_Servo](#CircuitPython_Servo)
-* [CircuitPython_LCD](#CircuitPython_LCD)
-* [NextAssignmentGoesHere](#NextAssignment)
+* [Servo](#Servo)
+* [Distance Sensor](#Distance_Sensor)
+* [LCD](#LCD)
+* [Motor](#Motor)
 ---
 
 ## Hello_CircuitPython
 
 ### Description & Code
-Description goes here
+This assignment makes the neopixel on the Metro change between colors of the rainbow.
 
-Here's how you make code look like code:
+### Code
 
 ```python
 import board
@@ -76,7 +76,7 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 
 
 
-## CircuitPython_Servo
+## Servo
 
 ### Description & Code
 
@@ -96,7 +96,25 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 
 
 
-## CircuitPython_LCD
+## Motor
+
+### Description & Code
+
+```python
+Code goes here
+
+```
+
+### Evidence
+
+### Wiring
+
+### Reflection
+
+
+
+
+## LCD
 
 ### Description & Code
 
@@ -117,7 +135,7 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 
 
 
-## NextAssignment
+## Motor
 
 ### Description & Code
 
