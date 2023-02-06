@@ -16,7 +16,40 @@ Description goes here
 Here's how you make code look like code:
 
 ```python
-Code goes here
+import board
+import neopixel
+
+dot = neopixel.NeoPixel(board.NEOPIXEL,1)
+dot.brightness = .25
+
+print("Hello Circuit Python")
+print("Make it change colors")
+
+r = 225
+g = 0
+b = 0
+
+while True:
+    if (r > 0 and g == 225):
+        r -= 1
+    if (r < 225 and b == 225 and g == 0):
+        r += 1
+    if (g < 225 and r == 225 and b == 0):
+        g += 1
+    if (g > 0 and b == 225):
+        g -= 1
+    if (b < 225 and r == 0 and g == 225):
+        b += 1
+    if (b > 0 and r == 225 and g == 0):
+        b -= 1
+    print("red")
+    print(r)
+    print("green")
+    print(g)
+    print("blue")
+    print(b)
+    dot.fill((r,g,b))
+    
 
 ```
 
