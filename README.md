@@ -112,8 +112,45 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 ### Description & Code
 
 ```python
-Code goes here
+import board
+import adafruit_hcsr04
+import neopixel
+import time
 
+dist = adafruit_hcsr04.HCSR04(trigger_pin = board.D5, echo_pin = board.D6)
+
+neo = neopixel.NeoPixel(board.NEOPIXEL,1)
+neo.brightness = 0.2
+
+r = 0 # rgb values
+g = 0
+b = 0
+
+while True:
+    try:
+        if (dist.distance <= 5): # red if less than 5
+            r = 225
+            g = 0
+            b = 0
+        elif (dist.distance >= 35): # green if greater than 35
+            r = 0
+            g = 225
+            b = 0    
+        else:
+            if (dist.distance >= 15 and dist.distance <= 25): # blue if 15-25
+                r = 0
+                g = 0
+                b = 225
+            elif (dist.distance < 15): # fades to red
+                r = 225 - 22.5 * (dist.distance - 5)
+                b =  22.5 * (dist.distance - 5)
+            else: # fades to green
+                g = 22.5 * (dist.distance - 25)
+                b = 225 - 22.5 * (dist.distance - 25)
+        neo.fill((r,g,b))
+    except RuntimeError: # catches exception
+        print("retry")
+    time.sleep(1)
 ```
 
 ### Evidence
