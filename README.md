@@ -88,7 +88,7 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 
 
 
-## Motor
+## Distance Sensor
 
 ### Description & Code
 
