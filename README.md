@@ -8,7 +8,7 @@ This repository will actually serve as a aid to help you get started with your o
 * [Motor](#Motor)
 ---
 
-## Hello_CircuitPython
+## Hello CircuitPython
 
 ### Description & Code
 This assignment makes the neopixel on the Metro change between colors of the rainbow.
