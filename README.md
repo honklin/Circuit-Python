@@ -112,7 +112,10 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 
 ## Distance Sensor
 
-### Description & Code
+### Description
+This assignment makes the neopixel red if an object is within 5 cm, green if it's more than 35 cm, blue in between, and fades between the different colors.
+
+###Code
 
 ```python
 import board
@@ -167,7 +170,10 @@ while True:
 
 ## LCD
 
-### Description & Code
+### Description
+This assignment prints the total of buttons adding or subtracting on an LCD screen.
+
+###Code
 
 ```python
 import board
