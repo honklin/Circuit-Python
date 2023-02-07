@@ -73,8 +73,27 @@ The most challenging part of this assignment was figuring out how to connect the
 ### Description & Code
 
 ```python
-Code goes here
+import board
+from adafruit_motor import servo
+import touchio
+import pwmio
+import time
 
+pwm = pwmio.PWMOut(board.D13,duty_cycle=2**15,frequency=100)
+servo = servo.Servo(pwm) # servo object
+
+touch1 = touchio.TouchIn(board.A0) # buttons
+touch2 = touchio.TouchIn(board.A1)
+
+servo.angle = 90
+
+while True:
+    if servo.angle <= 178 and touch1.value: # increases til 180
+        servo.angle += 2
+        time.sleep(.01)
+    elif servo.angle >= 2 and touch2.value: # decreases til 0
+        servo.angle -= 2
+        time.sleep(.01)
 ```
 
 ### Evidence
