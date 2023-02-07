@@ -170,8 +170,49 @@ while True:
 ### Description & Code
 
 ```python
-Code goes here
+import board
+import time
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+from digitalio import DigitalInOut, Direction, Pull
 
+i2c = board.I2C()
+lcd = LCD(I2CPCF8574Interface(i2c, 0x3f), num_rows=2, num_cols=16)
+
+up = DigitalInOut(board.D12) # up button
+up.pull = Pull.UP
+up.direction = Direction.INPUT
+
+down = DigitalInOut(board.D13) # down button
+down.pull = Pull.UP
+down.direction = Direction.INPUT
+
+count = 0
+precount = -1 # placeholder for comparison
+direction = " "
+space = 0 # lcd spacing
+
+while True:
+    precount = count
+    if (up.value): # counts up
+        print("up")
+        while (up.value):
+            direction = "Up:"
+        count += 1
+        space = 4
+    elif (down.value): # counts down
+        print("down")
+        while (down.value):
+            direction = "Down:"
+        count -= 1
+        space = 6
+    if (count != precount): # prevents holding counts
+        lcd.clear()
+        lcd.set_cursor_pos(0,0)
+        lcd.print(direction) # print direction
+        lcd.set_cursor_pos(0,space)
+        lcd.print(str(count)) # print count
+    time.sleep(.01)
 ```
 
 ### Evidence
