@@ -25,22 +25,22 @@ dot.brightness = .25
 print("Hello Circuit Python")
 print("Make it change colors")
 
-r = 225
+r = 225 # rgb values
 g = 0
 b = 0
 
 while True:
-    if (r > 0 and g == 225):
+    if (r > 0 and g == 225): # decreases red
         r -= 1
-    if (r < 225 and b == 225 and g == 0):
+    if (r < 225 and b == 225 and g == 0): # increases red
         r += 1
-    if (g < 225 and r == 225 and b == 0):
+    if (g < 225 and r == 225 and b == 0): # increases green
         g += 1
-    if (g > 0 and b == 225):
+    if (g > 0 and b == 225): # decreases green
         g -= 1
-    if (b < 225 and r == 0 and g == 225):
+    if (b < 225 and r == 0 and g == 225): # increases blue
         b += 1
-    if (b > 0 and r == 225 and g == 0):
+    if (b > 0 and r == 225 and g == 0): # decreases bue
         b -= 1
     print("red")
     print(r)
@@ -48,7 +48,7 @@ while True:
     print(g)
     print("blue")
     print(b)
-    dot.fill((r,g,b))
+    dot.fill((r,g,b)) # fills
 ```
 
 
