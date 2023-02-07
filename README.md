@@ -10,7 +10,7 @@ This repository will actually serve as a aid to help you get started with your o
 
 ## Hello CircuitPython
 
-### Description & Code
+### Description
 This assignment makes the neopixel on the Metro change between colors of the rainbow.
 
 ### Code
@@ -70,7 +70,10 @@ The most challenging part of this assignment was figuring out how to connect the
 
 ## Servo
 
-### Description & Code
+### Description
+This assignment makes a servo change between 0 and 180 degrees using capacitive touch.
+
+### Code
 
 ```python
 import board
