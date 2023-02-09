@@ -167,6 +167,7 @@ https://user-images.githubusercontent.com/121810694/217868476-e565f3ca-da63-456b
 
 ### Wiring
 
+![Distance Sensor](https://user-images.githubusercontent.com/121810694/217875442-86b62b5d-6482-46b9-9239-192163d9f427.png)
 
 ### Reflection
 The hardest part of this assignment was figuring out how to get the neopixel to fade between colors. I eventually figured out how much each rgb value would need to increase and decrease between each pin and used that to find the value for each rgb value with an equation using the distance. I also realized that I had to find some way to catch the runtime errors that kept being thrown so I used a try except statement that would only run the code if it wasn't going to throw a runtime exception.
