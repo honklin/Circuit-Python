@@ -104,6 +104,8 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 
 ### Wiring
 
+![Servo](https://user-images.githubusercontent.com/121810694/217870611-37c692d1-40b4-445a-93b7-bdd95debfa1f.png)
+
 ### Reflection
 
 
@@ -165,7 +167,6 @@ https://user-images.githubusercontent.com/121810694/217868476-e565f3ca-da63-456b
 
 ### Wiring
 
-![Servo](https://user-images.githubusercontent.com/121810694/217870103-2bb217c8-530d-4859-8b5d-1a2fee4405bc.png)
 
 ### Reflection
 The hardest part of this assignment was figuring out how to get the neopixel to fade between colors. I eventually figured out how much each rgb value would need to increase and decrease between each pin and used that to find the value for each rgb value with an equation using the distance. I also realized that I had to find some way to catch the runtime errors that kept being thrown so I used a try except statement that would only run the code if it wasn't going to throw a runtime exception.
