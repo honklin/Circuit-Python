@@ -234,6 +234,8 @@ https://user-images.githubusercontent.com/121810694/217867370-0524ab2c-ccad-4789
 
 ### Wiring
 
+![LCD](https://user-images.githubusercontent.com/121810694/217872669-8773a2da-35cf-47a8-aa9f-639396797319.png)
+
 ### Reflection
 This assignment's most challenging part was connecting it to Metro with the LCD imports and pin connections. Because I was a bit unfamiliar with the Circuit Python libraries, I accidentally put the files in the wrong drive before discovering that my code files need to go on the Circuit Python drive on my computer, not the one that links to the actually drive on the Metro, but the libraries need to go on the Metro drive. I also didn't realize that the Metros have built in SCL and SDA pins, so you don't have to declare them, Circuit Python just expects them to be plugged in there.
 
