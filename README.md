@@ -67,11 +67,6 @@ The most challenging part of this assignment was figuring out how to connect the
 
 
 
-
-
-
-
-
 ## Servo
 
 ### Description
@@ -110,10 +105,6 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 ### Wiring
 
 ### Reflection
-
-
-
-
 
 
 
@@ -174,11 +165,6 @@ while True:
 
 ### Reflection
 The hardest part of this assignment was figuring out how to get the neopixel to fade between colors. I eventually figured out how much each rgb value would need to increase and decrease between each pin and used that to find the value for each rgb value with an equation using the distance. I also realized that I had to find some way to catch the runtime errors that kept being thrown so I used a try except statement that would only run the code if it wasn't going to throw a runtime exception.
-
-
-
-
-
 
 
 
@@ -245,11 +231,6 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 
 ### Reflection
 This assignment's most challenging part was connecting it to Metro with the LCD imports and pin connections. Because I was a bit unfamiliar with the Circuit Python libraries, I accidentally put the files in the wrong drive before discovering that my code files need to go on the Circuit Python drive on my computer, not the one that links to the actually drive on the Metro, but the libraries need to go on the Metro drive. I also didn't realize that the Metros have built in SCL and SDA pins, so you don't have to declare them, Circuit Python just expects them to be plugged in there.
-
-
-
-
-
 
 
 
