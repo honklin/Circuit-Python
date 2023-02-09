@@ -225,7 +225,7 @@ while True:
 
 ### Evidence
 
-(https://user-images.githubusercontent.com/121810694/217867370-0524ab2c-ccad-4789-a559-7e34115aeb3d.MOV)
+https://user-images.githubusercontent.com/121810694/217867370-0524ab2c-ccad-4789-a559-7e34115aeb3d.GIF
 
 ### Wiring
 
