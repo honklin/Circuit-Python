@@ -246,11 +246,25 @@ This assignment's most challenging part was connecting it to Metro with the LCD 
 
 ## Motor
 
-### Description & Code
+### Description
+This assignment speeds up and slows down a motor using a potentiometer.
+
+### Code
 
 ```python
-Code goes here
+import board
+import time
+import simpleio
+import analogio
+import pwmio
 
+pot = AnalogIn(board.A1) # potentiometer
+motor = pwmio.PWMOut(board.D2,duty_cycle = 65535,frequency=5000) # motor
+
+while True:
+    map = int(simpleio.map_range(analog_in.value,0,65535,0,255)) # converts potentiometer values to speed
+    motor.duty_cycle = map # motor speed
+    time.sleep(.01)
 ```
 
 ### Evidence
