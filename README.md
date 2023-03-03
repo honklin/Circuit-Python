@@ -104,7 +104,7 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 
 ### Wiring
 
-![Servo](https://user-images.githubusercontent.com/121810694/222765854-081e89f1-702e-4609-8001-016bb00b7615.png)
+![Servo](https://user-images.githubusercontent.com/121810694/222766965-4637e587-510e-40ff-85f8-080561421d7e.png)
 
 ### Reflection
 The hardest part of this assignment was learning how capacitive touch works and how to wire it on the Metro. It uses a pretty understandable library called touchio that establishes pins as touch sensors. The wiring was a bit more difficult, because the touch wires need a grounded resistor to restrict some of the voltage from going straight into the board.
