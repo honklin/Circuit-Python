@@ -1,3 +1,4 @@
+![Servo](https://user-images.githubusercontent.com/121810694/222765854-081e89f1-702e-4609-8001-016bb00b7615.png)
 # CircuitPython
 This repository will actually serve as a aid to help you get started with your own template.  You should copy the raw form of this readme into your own, and use this template to write your own.  If you want to draw inspiration from other classmates, feel free to check [this directory of all students!](https://github.com/chssigma/Class_Accounts).
 ## Table of Contents
@@ -104,7 +105,7 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 
 ### Wiring
 
-![Servo](https://user-images.githubusercontent.com/121810694/217870611-37c692d1-40b4-445a-93b7-bdd95debfa1f.png)
+![Servo](https://user-images.githubusercontent.com/121810694/222765854-081e89f1-702e-4609-8001-016bb00b7615.png)
 
 ### Reflection
 The hardest part of this assignment was learning how capacitive touch works and how to wire it on the Metro. It uses a pretty understandable library called touchio that establishes pins as touch sensors. The wiring was a bit more difficult, because the touch wires need a grounded resistor to restrict some of the voltage from going straight into the board.
