@@ -272,3 +272,4 @@ while True:
 ### Wiring
 
 ### Reflection
+It was very important in this assignment to convert the values from the motor value range (0-65535), to the potentiometer value range (0-255). I used the map function to convert the motor values to a 0-225 range. Without doing this, the motor and potentiometer do not line up and it would be much harder to speed up the motor without that function.
