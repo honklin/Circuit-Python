@@ -54,11 +54,7 @@ while True:
 
 ### Evidence
 
-
-![HelloCircuitPython](https://user-images.githubusercontent.com/121810694/222486897-bb95fb8c-843e-433a-9f74-883e043ee726.mov)
-
-
-
+https://user-images.githubusercontent.com/121810694/223172323-18e369b9-536b-4069-99a7-a207225567c3.mov
 
 ### Reflection
 The most challenging part of this assignment was figuring out how to connect the Metro to my computer and how to move the libraries into the correct places to be able to run the code. I had tried to use a Mac to do these assignments at home, but I discovered that the method for running code pretty much only works on a PC. Also, I found that for libraries that need to be added to the CIRCUITPY folder, you should put the files in the lib folder within CIRCUITPY, not just under the folder. Sometimes the Metro will already have some of the files added, but they may be the wrong version of Circuit Python.
