@@ -271,4 +271,4 @@ while True:
 ![Motor](https://user-images.githubusercontent.com/121810694/222774779-1b3d3acd-5a53-4e8f-8368-750f4e633a33.png)
 
 ### Reflection
-It was very important in this assignment to convert the values from the motor value range (0-65535), to the potentiometer value range (0-255). I used the map function to convert the motor values to a 0-225 range so that it matches the potentiometer. Without doing this, the motor and potentiometer do not line up and it would be much harder to speed up the motor without that function.
+It was very important in this assignment to convert the values from the motor value range (0-65535), to the potentiometer value range (0-255). I used the map function to convert the motor values to a 0-225 range so that it matches the potentiometer. Without doing this, the motor and potentiometer do not line up and it would be much harder to speed up the motor.
