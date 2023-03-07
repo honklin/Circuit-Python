@@ -257,7 +257,7 @@ import pwmio
 pot = AnalogIn(board.A1) # potentiometer
 motor = pwmio.PWMOut(board.D2,duty_cycle = 65535,frequency=5000) # motor
 
-while True:
+while True: # keeps motor running
     map = int(simpleio.map_range(analog_in.value,0,65535,0,255)) # converts potentiometer values to speed
     motor.duty_cycle = map # motor speed
     time.sleep(.01)
