@@ -268,7 +268,8 @@ while True: # keeps motor running
 
 ### Wiring
 
-![Motor](https://user-images.githubusercontent.com/121810694/222774779-1b3d3acd-5a53-4e8f-8368-750f4e633a33.png)
+![Motor](https://user-images.githubusercontent.com/121810694/224089573-927c914d-e9e8-468c-a807-1918e8910721.png)
+
 
 ### Reflection
 It was very important in this assignment to convert the values from the motor value range (0-65535), to the potentiometer value range (0-255). I used the map function to convert the motor values to a 0-225 range so that it matches the potentiometer. Without doing this, the motor and potentiometer value would not line up and it would be much harder to control the motor based on the potentiometer.
