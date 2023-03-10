@@ -273,4 +273,4 @@ https://user-images.githubusercontent.com/121810694/224369479-56896006-b3df-4313
 ![Motor](https://user-images.githubusercontent.com/121810694/224090082-2510f995-268c-48f4-ba89-bab9ef72522d.png)
 
 ### Reflection
-It was very important in this assignment to convert the values from the potentiometer value range (0-255), to the motor value range (0-65535). I used the map function to convert the potentiometer values to a 0-65535 range so that it matches the motor. Without doing this, the motor and potentiometer value would not line up and it would be much harder to control the motor based on the potentiometer.
+It was very important in this assignment to convert the values from the potentiometer value range (0-255), to the motor value range (0-65535). I used the map function to convert the potentiometer values to a 0-65535 range so that it matches the motor speed values. I had thought that the map function would find the new values from the variables given and store them in a new variable, but it stores the mapped value in the first given variable. The function maps the potentiometer values and stores the new values in the same potentiometer variable.
