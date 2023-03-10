@@ -266,6 +266,8 @@ while True: # keeps motor running
 
 ### Evidence
 
+https://user-images.githubusercontent.com/121810694/224369479-56896006-b3df-4313-82f4-8b000a13970e.MOV
+
 ### Wiring
 
 ![Motor](https://user-images.githubusercontent.com/121810694/224090082-2510f995-268c-48f4-ba89-bab9ef72522d.png)
