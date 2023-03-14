@@ -101,6 +101,7 @@ https://user-images.githubusercontent.com/121810694/223171944-63d5da51-4c83-4317
 ### Wiring
 
 ![Servo](https://user-images.githubusercontent.com/121810694/222766965-4637e587-510e-40ff-85f8-080561421d7e.png)
+Wiring for Servo
 
 ### Reflection
 The hardest part of this assignment was learning how capacitive touch works and how to wire it on the Metro. It uses a pretty understandable library called touchio that establishes pins as touch sensors. The wiring was a bit more difficult, because the touch wires need a grounded resistor to restrict some of the voltage from going straight into the board.
@@ -164,6 +165,7 @@ https://user-images.githubusercontent.com/121810694/217868476-e565f3ca-da63-456b
 ### Wiring
 
 ![Distance Sensor](https://user-images.githubusercontent.com/121810694/217875442-86b62b5d-6482-46b9-9239-192163d9f427.png)
+Wiring for Distance Sensor
 
 ### Reflection
 The hardest part of this assignment was figuring out how to get the neopixel to fade between colors. I eventually figured out how much each rgb value would need to increase and decrease between each pin and used that to find the value for each rgb value with an equation using the distance. I also realized that I had to find some way to catch the runtime errors that kept being thrown so I used a try except statement that would only run the code if it wasn't going to throw a runtime exception.
@@ -232,6 +234,7 @@ https://user-images.githubusercontent.com/121810694/217867370-0524ab2c-ccad-4789
 ### Wiring
 
 ![LCD](https://user-images.githubusercontent.com/121810694/223163649-a5ce9926-c3f3-4120-be41-5f3053a36834.png)
+Wiring for LCD
 
 
 ### Reflection
@@ -272,6 +275,7 @@ https://user-images.githubusercontent.com/121810694/224369479-56896006-b3df-4313
 ### Wiring
 
 ![Motor](https://user-images.githubusercontent.com/121810694/224090082-2510f995-268c-48f4-ba89-bab9ef72522d.png)
+Wiring for Motor
 
 ### Reflection
 It was very important in this assignment to convert the values from the potentiometer value range (0-255), to the motor value range (0-65535). I used the map function to convert the potentiometer values to a 0-65535 range so that it matches the motor speed values. I had thought that the map function would find the new values from the variables given and store them in a new variable, but it instead stores the mapped values in one of the given variables. The function maps the potentiometer values and stores the new values in the same potentiometer variable.
@@ -331,6 +335,7 @@ https://user-images.githubusercontent.com/121810694/225058207-99a6e2d3-5c1a-41ee
 ### Wiring
 
 ![Temperature Sensor](https://user-images.githubusercontent.com/121810694/225062286-b8dbbc86-3c23-40e8-9475-0bb9638b4500.png)
+Wiring for Temperature Sensor
 
 ### Reflection
 The hardest part of this assignment was finding the temperature values from the sensor. There isn't a library for the temperature sensor so I declared the sensor as an analog pin and found the values using analogio. The values I was getting were much too high so I mapped the values from 0 - 65535 to 32 - 212, which is the range for Fahrenheit. It was also important to remember that the SDA and SCL pins on the LCD screen go to the SDA and SCL pins on the Metro.
