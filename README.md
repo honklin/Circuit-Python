@@ -5,6 +5,7 @@
 * [Distance Sensor](#Distance_Sensor)
 * [LCD](#LCD)
 * [Motor](#Motor)
+* [Temperature Sensor] (#Temperature_Sensor)
 ---
 
 ## Hello CircuitPython
@@ -274,3 +275,20 @@ https://user-images.githubusercontent.com/121810694/224369479-56896006-b3df-4313
 
 ### Reflection
 It was very important in this assignment to convert the values from the potentiometer value range (0-255), to the motor value range (0-65535). I used the map function to convert the potentiometer values to a 0-65535 range so that it matches the motor speed values. I had thought that the map function would find the new values from the variables given and store them in a new variable, but it instead stores the mapped values in one of the given variables. The function maps the potentiometer values and stores the new values in the same potentiometer variable.
+
+
+
+
+
+##Temperature Sensor
+
+### Description
+This assignment shows the temperature on an LCD using a temperature sensor
+
+### Code
+
+### Evidence
+
+### Wiring
+
+### Reflection
