@@ -330,4 +330,6 @@ https://user-images.githubusercontent.com/121810694/225058207-99a6e2d3-5c1a-41ee
 
 ### Wiring
 
+![Temperature Sensor](https://user-images.githubusercontent.com/121810694/225062286-b8dbbc86-3c23-40e8-9475-0bb9638b4500.png)
+
 ### Reflection
