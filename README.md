@@ -280,7 +280,7 @@ It was very important in this assignment to convert the values from the potentio
 
 
 
-##Temperature Sensor
+## Temperature Sensor
 
 ### Description
 This assignment shows the temperature on an LCD using a temperature sensor
