@@ -333,4 +333,4 @@ https://user-images.githubusercontent.com/121810694/225058207-99a6e2d3-5c1a-41ee
 ![Temperature Sensor](https://user-images.githubusercontent.com/121810694/225062286-b8dbbc86-3c23-40e8-9475-0bb9638b4500.png)
 
 ### Reflection
-The hardest part of this assignment was finding the temperature values from the sensor. There isn't a library for the temperature sensor so I declared the sensor as an analog pin and found the values using analogio. Then, the values I was getting were much too high so I mapped the values from 0 - 65535 to 32 - 212, which is the range for Fahrenheit. It was also important to remember that the SDA and SCL pins on the LCD screen go to the SDA and SCL pins on the Metro.
+The hardest part of this assignment was finding the temperature values from the sensor. There isn't a library for the temperature sensor so I declared the sensor as an analog pin and found the values using analogio. The values I was getting were much too high so I mapped the values from 0 - 65535 to 32 - 212, which is the range for Fahrenheit. It was also important to remember that the SDA and SCL pins on the LCD screen go to the SDA and SCL pins on the Metro.
