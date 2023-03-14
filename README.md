@@ -5,7 +5,7 @@
 * [Distance Sensor](#Distance_Sensor)
 * [LCD](#LCD)
 * [Motor](#Motor)
-* [Temperature Sensor] (#Temperature_Sensor)
+* [Temperature_Sensor] (#Temperature_Sensor)
 ---
 
 ## Hello CircuitPython
