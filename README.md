@@ -283,9 +283,45 @@ It was very important in this assignment to convert the values from the potentio
 ## Temperature Sensor
 
 ### Description
-This assignment shows the temperature on an LCD using a temperature sensor
+This assignment shows the temperature on an LCD using a temperature sensor.
 
 ### Code
+```python
+import board
+from lcd.lcd import LCD # lcd libraries
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+import analogio
+import simpleio # map library
+import time
+
+i2c = board.I2C() # lcd declaration
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
+
+tempSensor = analogio.AnalogIn(board.A0) # temperature sensor
+
+temp = 74 # temperature
+oldTemp = 0 # refresh variable
+message = " "
+
+while True:
+    temp = int(simpleio.map_range(tempSensor.value,0,65535,32,212)) # maps values to Fahrenheit
+    if (oldTemp != temp): # checks if needs to reprint lcd text
+        if (temp < 70): # < 70
+         message = "Too cold!"
+        elif (temp > 78): # > 78
+            message = "Too hot!"
+        else: # 70-78
+            message = "Just right"
+        lcd.clear()
+        lcd.set_cursor_pos(0,0)
+        lcd.print(str(temp)) # prints temp
+        lcd.set_cursor_pos(0,3)
+        lcd.print("deg F")
+        lcd.set_cursor_pos(1,0)
+        lcd.print(message)
+    oldTemp = temp
+    time.sleep(1)
+```
 
 ### Evidence
 
