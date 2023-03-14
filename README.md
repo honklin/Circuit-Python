@@ -286,6 +286,7 @@ It was very important in this assignment to convert the values from the potentio
 This assignment shows the temperature on an LCD using a temperature sensor.
 
 ### Code
+
 ```python
 import board
 from lcd.lcd import LCD # lcd libraries
@@ -306,9 +307,9 @@ message = " "
 while True:
     temp = int(simpleio.map_range(tempSensor.value,0,65535,32,212)) # maps values to Fahrenheit
     if (oldTemp != temp): # checks if needs to reprint lcd text
-        if (temp < 72): # < 72
+        if (temp <= 72): # <= 72
          message = "Too cold!"
-        elif (temp > 76): # > 76
+        elif (temp >= 76): # >=  76
             message = "Too hot!"
         else: # 72-76
             message = "Just right"
@@ -324,6 +325,8 @@ while True:
 ```
 
 ### Evidence
+
+https://user-images.githubusercontent.com/121810694/225058207-99a6e2d3-5c1a-41ee-8983-57bb746485ee.mp4
 
 ### Wiring
 
