@@ -309,7 +309,7 @@ while True:
     if (oldTemp != temp): # checks if needs to reprint lcd text
         if (temp <= 72): # <= 72
          message = "Too cold!"
-        elif (temp >= 76): # >=  76
+        elif (temp >= 76): # >= 76
             message = "Too hot!"
         else: # 72-76
             message = "Just right"
