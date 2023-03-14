@@ -306,11 +306,11 @@ message = " "
 while True:
     temp = int(simpleio.map_range(tempSensor.value,0,65535,32,212)) # maps values to Fahrenheit
     if (oldTemp != temp): # checks if needs to reprint lcd text
-        if (temp < 70): # < 70
+        if (temp < 72): # < 72
          message = "Too cold!"
-        elif (temp > 78): # > 78
+        elif (temp > 76): # > 76
             message = "Too hot!"
-        else: # 70-78
+        else: # 72-76
             message = "Just right"
         lcd.clear()
         lcd.set_cursor_pos(0,0)
