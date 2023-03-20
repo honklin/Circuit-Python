@@ -2,11 +2,11 @@
 ## Table of Contents
 * [Hello CircuitPython](#Hello_CircuitPython)
 * [Servo](#Servo)
-* [Distance Sensor](#DistanceSensor)
+* [Distance Sensor](#Distance_Sensor)
 * [LCD](#LCD)
 * [Motor](#Motor)
-* [Temperature Sensor](#TemperatureSensor)
-* [Rotary Encoder](#RotaryEncoder)
+* [Temperature Sensor](#Temperature_Sensor)
+* [Rotary Encoder](#Rotary_Encoder)
 ---
 
 ## Hello_CircuitPython
@@ -110,7 +110,7 @@ The hardest part of this assignment was learning how capacitive touch works and 
 
 
 
-## Distance Sensor
+## Distance_Sensor
 
 ### Description
 This assignment makes the neopixel red if an object is within 5 cm, green if it's more than 35 cm, blue in between, and fades between the different colors.
@@ -285,7 +285,7 @@ It was very important in this assignment to convert the values from the potentio
 
 
 
-## Temperature Sensor
+## Temperature_Sensor
 
 ### Description
 This assignment shows the temperature on an LCD using a temperature sensor.
@@ -341,7 +341,12 @@ Wiring for Temperature Sensor
 ### Reflection
 The hardest part of this assignment was finding the temperature values from the sensor. There isn't a library for the temperature sensor so I declared the sensor as an analog pin and found the values using analogio. The values I was getting were much too high so I mapped the values from 0 - 65535 to 32 - 212, which is the range for Fahrenheit. It was also important to remember that the SDA and SCL pins on the LCD screen go to the SDA and SCL pins on the Metro.
 
-## Rotary Encoder
+
+
+
+
+
+## Rotary_Encoder
 
 ### Description
 
