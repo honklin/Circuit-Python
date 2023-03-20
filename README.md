@@ -339,3 +339,15 @@ Wiring for Temperature Sensor
 
 ### Reflection
 The hardest part of this assignment was finding the temperature values from the sensor. There isn't a library for the temperature sensor so I declared the sensor as an analog pin and found the values using analogio. The values I was getting were much too high so I mapped the values from 0 - 65535 to 32 - 212, which is the range for Fahrenheit. It was also important to remember that the SDA and SCL pins on the LCD screen go to the SDA and SCL pins on the Metro.
+
+## Rotary Encoder
+
+### Description
+
+### Code
+
+### Evidence
+
+### Wiring
+
+### Reflection
