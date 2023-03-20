@@ -1,6 +1,6 @@
 # CircuitPython
 ## Table of Contents
-* [Hello CircuitPython](#HelloCircuitPython)
+* [Hello CircuitPython](#Hello_CircuitPython)
 * [Servo](#Servo)
 * [Distance Sensor](#DistanceSensor)
 * [LCD](#LCD)
@@ -9,7 +9,7 @@
 * [Rotary Encoder](#RotaryEncoder)
 ---
 
-## Hello CircuitPython
+## Hello_CircuitPython
 
 ### Description
 This assignment makes the neopixel on the Metro change between colors of the rainbow.
