@@ -1,12 +1,12 @@
 # CircuitPython
 ## Table of Contents
-* [Hello CircuitPython](#Hello CircuitPython)
+* [Hello CircuitPython](#HelloCircuitPython)
 * [Servo](#Servo)
-* [Distance Sensor](#Distance Sensor)
+* [Distance Sensor](#DistanceSensor)
 * [LCD](#LCD)
 * [Motor](#Motor)
-* [Temperature Sensor](#Temperature_Sensor)
-* [Rotary Encoder](#Rotary_Encoder)
+* [Temperature Sensor](#TemperatureSensor)
+* [Rotary Encoder](#RotaryEncoder)
 ---
 
 ## Hello CircuitPython
