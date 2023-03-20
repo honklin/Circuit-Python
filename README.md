@@ -6,6 +6,7 @@
 * [LCD](#LCD)
 * [Motor](#Motor)
 * [Temperature Sensor](#Temperature_Sensor)
+* [Rotary Encoder](#Rotary_Encoder)
 ---
 
 ## Hello CircuitPython
