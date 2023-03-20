@@ -1,8 +1,8 @@
 # CircuitPython
 ## Table of Contents
-* [Hello CircuitPython](#Hello_CircuitPython)
+* [Hello CircuitPython](#Hello CircuitPython)
 * [Servo](#Servo)
-* [Distance Sensor](#Distance_Sensor)
+* [Distance Sensor](#Distance Sensor)
 * [LCD](#LCD)
 * [Motor](#Motor)
 * [Temperature Sensor](#Temperature_Sensor)
