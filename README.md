@@ -418,4 +418,7 @@ https://user-images.githubusercontent.com/121810694/226646755-eea054a9-9ec1-4bef
 
 ### Wiring
 
+![Rotary Encoder](https://user-images.githubusercontent.com/121810694/226651057-d4c9f24b-7374-41de-8f0a-3488ab28b840.png)
+Wiring for Rotary Encoder
+
 ### Reflection
