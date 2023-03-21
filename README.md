@@ -7,6 +7,7 @@
 * [Motor](#Motor)
 * [Temperature Sensor](#Temperature_Sensor)
 * [Rotary Encoder](#Rotary_Encoder)
+* [Photointerrupter](#Photointerrupter)
 ---
 
 ## Hello_CircuitPython
@@ -423,3 +424,21 @@ Wiring for Rotary Encoder
 
 ### Reflection
 In this assignment, it was very important to find the library for rotary encoders. Rotaryio lets the Metro communicate with both the button and the potentiometer on the rotary encoder, but they must be declared separately. The hardest part of this assignment was modifying the encoder position so that it could be used for the LEDs. I used % to find the remainder of 20 in order to fix the continuous rotation position, then I checked which third of the circle the encoder was in.
+
+
+
+
+
+
+
+## Photointerrupter
+
+### Description
+
+### Code
+
+### Evidence
+
+### Wiring
+
+### Reflection
