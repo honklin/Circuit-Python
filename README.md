@@ -352,6 +352,65 @@ The hardest part of this assignment was finding the temperature values from the 
 This assignment changes traffic lights using a rotary encoder and displays the state on an LCD.
 
 ### Code
+```python
+import board
+from lcd.lcd import LCD # lcd libraries
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+import rotaryio # rotary encoder library
+import digitalio # led library
+import time
+
+i2c = board.I2C() # lcd declaration
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
+
+encoder = rotaryio.IncrementalEncoder(board.D3,board.D4) # rotary encoder potentiometer
+
+button = digitalio.DigitalInOut(board.D2) # rotary encoder button
+button.pull = digitalio.Pull.UP
+button.direction = digitalio.Direction.INPUT
+
+stop = digitalio.DigitalInOut(board.D13) # red led
+stop.direction = digitalio.Direction.OUTPUT
+
+caution = digitalio.DigitalInOut(board.D12) # yellow led
+caution.direction = digitalio.Direction.OUTPUT
+
+go = digitalio.DigitalInOut(board.D11) # green led
+go.direction = digitalio.Direction.OUTPUT
+
+position = 0 # modified position
+states = ["stop", "caution", "go"] # states
+state = " " # lcd print state
+x = 0 # array selection
+
+while True:
+    prestate = state # uses for reprinting
+    position = encoder.position % 20 # finds ticks from 0
+    if (position < 7): # if stop
+        x = 0
+    elif (position > 12): # if go
+        x = 2
+    else: # if caution
+        x = 1
+    state = states[x] # sets state
+    if (button.value == False): # if button is pressed
+        stop.value = False
+        caution.value = False
+        go.value = False
+        if (state == "stop"): # turns on correct light
+            stop.value = True
+        elif (state == "caution"):
+            caution.value = True
+        else:
+            go.value = True
+    if (state != prestate): # reprints lcd data
+        lcd.clear()
+        lcd.set_cursor_pos(0,0)
+        lcd.print("Push for ")
+        lcd.set_cursor_pos(0,9)
+        lcd.print(state) # prints state
+    time.sleep(0.1)
+```
 
 ### Evidence
 
