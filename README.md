@@ -434,6 +434,7 @@ In this assignment, it was very important to find the library for rotary encoder
 ## Photointerrupter
 
 ### Description
+This assignment displays the number of times a photointerrupter is interrupted on an LCD screen.
 
 ### Code
 
