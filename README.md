@@ -349,10 +349,13 @@ The hardest part of this assignment was finding the temperature values from the 
 ## Rotary_Encoder
 
 ### Description
+This assignment changes traffic lights using a rotary encoder and displays the state on an LCD.
 
 ### Code
 
 ### Evidence
+
+https://user-images.githubusercontent.com/121810694/226646755-eea054a9-9ec1-4bef-9fad-6f0f25bfa037.MOV
 
 ### Wiring
 
