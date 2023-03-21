@@ -442,4 +442,7 @@ This assignment displays the number of times a photointerrupter is interrupted o
 
 ### Wiring
 
+![Photointerrupter](https://user-images.githubusercontent.com/121810694/226665078-655c64fd-0e29-41fc-a4ef-7e928f467bf7.png)
+Wiring for Photointerrupter
+
 ### Reflection
