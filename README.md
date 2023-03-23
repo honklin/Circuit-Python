@@ -437,6 +437,39 @@ In this assignment, it was very important to find the library for rotary encoder
 This assignment displays the number of times a photointerrupter is interrupted on an LCD screen.
 
 ### Code
+```python
+import board
+from lcd.lcd import LCD # lcd liraries
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+import digitalio # use photointerrupter was digital input
+import time
+
+i2c = board.I2C() # lcd declaration
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
+
+photo = digitalio.DigitalInOut(board.D2) # photointerrupter
+photo.direction = digitalio.Direction.INPUT
+
+interrupts = 0
+now = time.monotonic() # keeps time without sleep()
+increase = False
+
+while True:
+    while (photo.value == True): # loops while being interrupted
+        increase = True
+    if (increase == True): # only counts one per interrupt
+        interrupts += 1
+        increase = False
+    if (time.monotonic() - now >= 4): # prints every 4 seconds
+        lcd.clear()
+        lcd.set_cursor_pos(0,0)
+        lcd.print("The number of")
+        lcd.set_cursor_pos(1,0)
+        lcd.print("interrupts is ")
+        lcd.set_cursor_pos(1,14)
+        lcd.print(str(interrupts)) # prints number of interrupts
+        now = time.monotonic() # restarts counting
+```
 
 ### Evidence
 
