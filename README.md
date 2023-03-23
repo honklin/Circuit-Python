@@ -479,3 +479,4 @@ while True:
 Wiring for Photointerrupter
 
 ### Reflection
+I couldn't find a library for the photointerrupter so I declared it as a digital input that would send input similar to how a button would. I also needed to use monotonic() instead of sleep() to delay reprinting the LCD because sleep() stops the code and therefore wouldn't recognize when it is interrupted. However, monotonic() records the current time, so comparing the time back to the old time throughout the code will allow it to reprint the LCD every 4 seconds and also recognize any interruptions.
