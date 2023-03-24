@@ -57,6 +57,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/223172323-18e369b9-536b-4069-99a7-a207225567c3.mov
+Video of neopixel changing colors
 
 ### Reflection
 The most challenging part of this assignment was figuring out how to connect the Metro to my computer and how to move the libraries into the correct places to be able to run the code. I had tried to use a Mac to do these assignments at home, but I discovered that the method for running code pretty much only works on a PC. Also, I found that for libraries that need to be added to the CIRCUITPY folder, you should put the files in the lib folder within CIRCUITPY, not just under the folder. Sometimes the Metro will already have some of the files added, but they may be the wrong version of Circuit Python.
@@ -99,6 +100,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/223171944-63d5da51-4c83-4317-a7be-14b21c320523.mp4
+Video of servo changing degrees using capacative touch
 
 ### Wiring
 
@@ -163,6 +165,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/217868476-e565f3ca-da63-456b-a99f-a72157fd72f2.GIF
+Video of distance sensor changing neopixel based on distance of object
 
 ### Wiring
 
@@ -232,6 +235,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/217867370-0524ab2c-ccad-4789-a559-7e34115aeb3d.GIF
+Video of LCD printing number of presses with adding and subtracting buttons
 
 ### Wiring
 
@@ -273,6 +277,7 @@ while True: # keeps motor running
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/224369479-56896006-b3df-4313-82f4-8b000a13970e.MOV
+Video of motor changing speed based on potentiometer position
 
 ### Wiring
 
@@ -333,6 +338,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/225058207-99a6e2d3-5c1a-41ee-8983-57bb746485ee.mp4
+Video of LCd displaying changing temperature sensor values
 
 ### Wiring
 
@@ -416,6 +422,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/226646755-eea054a9-9ec1-4bef-9fad-6f0f25bfa037.MOV
+Video of rotary encoder selecting traffic states displayed on an LCD and turning on the correct LED
 
 ### Wiring
 
@@ -434,7 +441,7 @@ In this assignment, it was very important to find the library for rotary encoder
 ## Photointerrupter
 
 ### Description
-This assignment displays the number of times a photointerrupter is interrupted on an LCD screen.
+This assignment displays the number of times a photointerrupter is interrupted on an LCD screen every 4 seconds.
 
 ### Code
 ```python
@@ -474,6 +481,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/227567106-54802ce9-0e27-498e-9d23-e5254b33d241.mp4
+Video of LCD displaying the number of interrupts every 4 seconds
 
 ### Wiring
 
