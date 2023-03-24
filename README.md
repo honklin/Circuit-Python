@@ -343,6 +343,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/225058207-99a6e2d3-5c1a-41ee-8983-57bb746485ee.mp4
+
 Video of LCd displaying changing temperature sensor values
 
 ### Wiring
@@ -427,6 +428,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/226646755-eea054a9-9ec1-4bef-9fad-6f0f25bfa037.MOV
+
 Video of rotary encoder selecting traffic states displayed on an LCD and turning on the correct LED
 
 ### Wiring
@@ -486,6 +488,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/227567106-54802ce9-0e27-498e-9d23-e5254b33d241.mp4
+
 Video of LCD displaying the number of interrupts every 4 seconds
 
 ### Wiring
