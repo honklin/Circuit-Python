@@ -57,6 +57,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/223172323-18e369b9-536b-4069-99a7-a207225567c3.mov
+
 Video of neopixel changing colors
 
 ### Reflection
@@ -100,6 +101,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/223171944-63d5da51-4c83-4317-a7be-14b21c320523.mp4
+
 Video of servo changing degrees using capacative touch
 
 ### Wiring
@@ -165,6 +167,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/217868476-e565f3ca-da63-456b-a99f-a72157fd72f2.GIF
+
 Video of distance sensor changing neopixel based on distance of object
 
 ### Wiring
@@ -235,6 +238,7 @@ while True:
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/217867370-0524ab2c-ccad-4789-a559-7e34115aeb3d.GIF
+
 Video of LCD printing number of presses with adding and subtracting buttons
 
 ### Wiring
@@ -277,6 +281,7 @@ while True: # keeps motor running
 ### Evidence
 
 https://user-images.githubusercontent.com/121810694/224369479-56896006-b3df-4313-82f4-8b000a13970e.MOV
+
 Video of motor changing speed based on potentiometer position
 
 ### Wiring
