@@ -344,7 +344,7 @@ while True:
 
 https://user-images.githubusercontent.com/121810694/225058207-99a6e2d3-5c1a-41ee-8983-57bb746485ee.mp4
 
-Video of LCd displaying changing temperature sensor values
+Video of LCD displaying changing temperature sensor values
 
 ### Wiring
 
